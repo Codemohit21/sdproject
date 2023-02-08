@@ -1,0 +1,57 @@
+.btn{
+    border: 3px dotted #54cfc7;
+    background:none;
+    padding: 10px 20px ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0,8s;
+    position: relative;
+    overflow: hidden;
+    color: rgb(251, 252, 248);
+}
+.btn:hover{
+      color: rgb(219, 17, 17);
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #00070c;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;  
+}
+.btn:before{
+    height: 180%;
+}
+.btn:hover::before{
+    height: 0%;
+}
+/* .btn::before{
+    border-radius: 0,0,100%,50%;
+} */
+/* .btn1::before,.btn3::before{
+    top:0;
+    border-radius: 0 0 50% 50%;
+
+} */
+/* .btn2::before,.btn4::before{
+    bottom:0;
+    border-radius: 50% 50% 0 0;
+
+} */
+
+/* .btn3::before,.btn4::before{
+    height: 180%;
+} */
+/* .btn1:hover::before,.btn2:hover::before{
+
+height: 0%;
+} */
+/* .btn3:hover::before,.btn4:hover::before{
+
+    height: 0%;
+    } */
